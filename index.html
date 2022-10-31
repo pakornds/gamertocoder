@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head id="head">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link rel="icon" href="https://resource.blockmanmobile.com/web/OfficialWebsite/Home/logo.png" type="image/x-icon">
+  <!-- <link rel="preload" href="js/script.js" as="script"> -->
+  <script src="js/script.js" defer></script>
+  <title>Blockman Go</title>
+</head>
+
+<body>
+  <nav id="header">
+    <img id="blockManImg">
+    <div id="navBar" class="navBar">
+      <a href="#homee" id="menu" class="menu homee">Home</a>
+      <a href="#dl" id="menu" class="menu dl">Downloads</a>
+      <a href="#game" id="menu" class="menu game">Games</a>
+      <a href="#chr" id="menu" class="menu chr">Characters</a>
+    </div>
+
+    <!-- Navigation links (hidden by default) -->
+    <div id="navBarV" class="navBarV">
+      <a href="#homee" id="menu1" class="menu">Home</a>
+      <a href="#dl" id="menu2" class="menu">Downloads</a>
+      <a href="#game" id="menu3" class="menu">Games</a>
+      <a href="#cHead" id="menu4" class="menu">Characters</a>
+    </div>
+    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+    <a href="javascript:void(0);" id="icon" class="icon" onclick="hamActivate()">
+      <i class="fa fa-bars" id="hambt"></i>
+    </a>
+    <!-- 
+    <a href="javascript:void(0);" class="icon" onclick="hamActivate()">
+      <i class="fa fa-bars"></i>
+    </a> -->
+
+  </nav>
+
+  <section class="home" id="homee">
+    <div id="wHead" class="hidden">Welcome to Blockman Go!</div>
+    <div id="Slider" class="hidden">
+      <div id="mySlider"></div>
+      <div id="sliderNav">
+        <div id="sliderPrev" onclick="prevSlide();"><i class="fa fa-chevron-left"></i></div>
+        <div id="sliderNext" onclick="nextSlide();"><i class="fa fa-chevron-right"></i></div>
+      </div>
+    </div>
+  </section>
+  <section class="dl hidden" id="dl">
+    <div id="dHead">Downloads</div>
+    <div>
+      <div class="dl-content" id="dl-content">
+        <div class="fade"><a href="https://play.google.com/store/apps/details?id=com.app.blockmango"
+            target="_blank"><img src="https://resource.blockmanmobile.com/web/OfficialWebsite/Home/googlePlay2.png"></a>
+        </div>
+        <div class="fade"><a href="https://apps.apple.com/app/id1571913622" target="_blank"> <img
+              src="https://resource.blockmanmobile.com/web/OfficialWebsite/Home/appstore2.png"></a>
+
+        </div>
+        <div class="fade"><a href="https://pc.blockmanmobile.com/#/" target="_blank"><img
+              src="https://resource.blockmanmobile.com/web/OfficialWebsite/Home/windows.png"></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="main hidden" id="game">
+    <div id="mHead">Games</div>
+    <ul id="minigames"></ul>
+  </section>
+  <section class="main hidden" id="chr">
+    <div id="cHead">Characters</div>
+    <ul id="characters"></ul>
+  </section>
+
+  <button onclick="topFunction()" id="backtoTop" title="Go to top">
+    <div class="backtoTopRe">
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </div>
+  </button>
+
+  <button onclick="darkMode()" id="darkMode" class="darkMode" title="Theme">
+    <div class="darkModeRe">
+      <i class="fa-solid fa-circle-half-stroke"></i>
+    </div>
+  </button>
+
+  <footer id="footer" class="footer">
+    <div class="container-f">
+      <img id="blockManImg2">
+      <h2 class="MID">Copyright &copy; 2022 WE DO BE GAMIN </h2>
+    </div>
+  </footer>
+
+
+
+  <script src="js/backtotop.js" defer></script>
+  <script src="js/dark-theme.js" defer></script>
+  <script src="js/hamburger.js" defer></script>
+  <script src="js/scrolling-nav.js" defer></script>
+  <script src="js/aos.js"></script>
+  <!--   <script src="js/slide.js" defer></script> -->
+  <!--
+  <script defer>
+    let Slidejs = document.createElement('script');
+    Slidejs.src = 'js/slide.js';
+    document.body.appendChild(Slidejs);
+  </script> -->
+</body>
+
+</html>
